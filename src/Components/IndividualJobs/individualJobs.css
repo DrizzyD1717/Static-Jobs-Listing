@@ -1,0 +1,90 @@
+.individualJob {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background: var(--filter-tablets); */
+  background: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.individualJob .left {
+  flex-basis: 50%;
+  display: flex;
+}
+
+.individualJob .aboutJob {
+  margin-left: 0.8rem;
+}
+.individualJob .left .aboutTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.individualJob .left .aboutBottom {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  color: var(--dark-green);
+}
+
+.individualJob .left .aboutBottom p {
+  padding-right: 1rem;
+}
+
+.individualJob .companyName {
+  color: var(--bright-green);
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.new {
+  padding: 0.2rem;
+  border-radius: 5px;
+  background: var(--bright-green);
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.featured {
+  padding: 0.2rem;
+  border-radius: 5px;
+  background: var(--darker-green);
+  color: white;
+}
+
+.individualJob .right {
+  flex-basis: 50%;
+}
+
+.individualJob .right button {
+  background: var(--background);
+  color: var(--bright-green);
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.individualJob .right button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .individualJob {
+    flex-direction: column;
+  }
+
+  .individualJob .left {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--darker-green);
+  }
+
+  .individualJob .right {
+    padding-top: 1rem;
+  }
+}
